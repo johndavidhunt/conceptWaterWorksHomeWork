@@ -1,0 +1,239 @@
+/*css for pages for Concept Warersports HW by JdH for The Iron Yard Jan 2015*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,700italic,400,700); 
+
+
+/**********/
+/*testing*/
+* {
+	/*outline: 4px dashed tomato;*/
+}
+
+body {
+	/*background: url(../assets/design/productpage.jpg) no-repeat center top;*/
+	/*background-image:  linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url(../assets/design/productpage.jpg);*/
+	/*height: 1120px;*/	
+}
+.productPageInnards {
+
+	border-left: 3px solid rgba(25, 200, 125, 0.1);
+	border-right: 3px solid rgba(25, 200, 125, 0.1);
+}
+
+/**********/
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {}
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/**********/
+
+header {}
+main {}
+footer {}
+
+div {}
+span {}
+
+nav {}
+ul {}
+li {}
+dl {}
+dt {}
+dd {}
+
+p {}
+a {}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #121b6a;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h1 {}
+h2 {}
+h3 {}
+
+figure {}
+figcaption {}
+img {}
+
+article {}
+section {}
+
+form {}
+select {}
+option {}
+input {}
+button {}
+
+
+/**********/
+
+.productpage {
+	/*background: url(../images/bodybg.gif);*/
+}
+
+/**********/
+.pageWrapper {
+	background: url(../images/bodybg.gif);
+}
+.productPageInnards {
+	width: 975px;
+	margin: 0 auto;
+
+}
+
+
+.pageHeader {
+	background: rgb(181,181,181); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(181,181,181,1) 0%, rgba(252,252,252,0.01) 99%, rgba(252,252,252,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,181,181,1)), color-stop(99%,rgba(252,252,252,0.01)), color-stop(100%,rgba(252,252,252,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(181,181,181,1) 0%,rgba(252,252,252,0.01) 99%,rgba(252,252,252,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(181,181,181,1) 0%,rgba(252,252,252,0.01) 99%,rgba(252,252,252,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(181,181,181,1) 0%,rgba(252,252,252,0.01) 99%,rgba(252,252,252,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(181,181,181,1) 0%,rgba(252,252,252,0.01) 99%,rgba(252,252,252,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#00fcfcfc',GradientType=0 ); /* IE6-9 */
+	
+	border: 1px solid rgba(0,0,0, 0.001);
+	box-shadow:
+				0px 0px 36px 0px rgba(0,0,0, 0.1), 
+				0px 32px 72px -36px rgba(0,0,0, 0.05), 
+				0px 3px 18px -6px rgba(0,0,0, 0.35);
+	
+}
+.headerLogo {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 0 25px;
+}
+
+.h1de {
+	margin: 0;
+}
+.headerLogo a {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 224px;
+	height: 76px;
+
+	background-image: url(../images/conceptlogo.png);
+
+}
+
+
+.pageHeader nav {
+	display: inline-block;
+	text-align: right;
+	width: 75%;
+	width: calc(99.99% - 230px);
+}
+
+.navList {
+	list-style: none;
+}
+.navList li {
+	display: inline-block;
+
+}
+.navList a,
+.navList a:visited,
+.navList a:hover {
+	text-decoration: none;
+	
+	color: #1e2039; /*footer dark dark blue*/
+	color: #121b6a; /*link medium dark blue*/
+	color: #121b6a; /*headline medium dark blue*/
+
+
+}
+.contactNav {
+	/*color: #333;*/
+	font-weight: bold;
+	font-size: 0.75em;
+
+}
+.contactNav li {
+	padding: 0 6px;
+}
+.contactNav a,
+.contactNav a:visited {
+	color: #1270cc;
+
+}
+.mainNav {
+	margin: 25px 0;
+}
+.mainNav li {
+	padding-left: 20px;
+}
+.mainNav a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+}
+.pageContent {}
+
+
+.featuredProductImagesContainer {
+	display: none;
+}
+.featuredProductFigure {}
+.featuredProductImage {}
+.suggestProductsContainer {}
+.suggestedProductMini {}
+.suggestedProductImage {}
+
+
+.featuredProductInformation {
+
+}
+.featuredProductOrderForm {}
+.featuredProductOrderInfo {}
+.featuredProductOrderInfo h1 {
+	font-size: 2em;
+}
+.featuredProductOrderPrice {}
+.featuredProductPriceList {}
+.priceListingPrice {}
+.priceListingValue {}
+.priceLisingValue {}
+.discountOfferNotice {}
+.shareThis {}
+.orderBox {}
+.actionButton {}
+.featuredProductDetails {
+	font-size: 0.85em;
+}
+.featuredProductInlineName {
+	font-weight: bold;
+}
+
+
+.pageFooter {
+	background-color: #1e2039;
+	color: #EEE;
+}
+.footerNav {}
+.footerLinkList {}
+.footerLinkList li {}
+.footerLinkList a {}
+.copyrightInfo {}
+.copyPart {}
+
+/**********/
+
+#Featured_Product_Form {}
+#Featured_Product_Share_This {}
+#Add_To_Cart {}
+/**********/
