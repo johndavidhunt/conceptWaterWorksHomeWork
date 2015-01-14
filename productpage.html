@@ -8,6 +8,30 @@
 		<link rel="stylesheet" type="text/css" href="./css/instyle.css">
 		<link rel="shortcut icon" href="favicon.ico">
 	
+	<script type="text/javascript">
+		function funcColorChange(ele) {
+			// not working yet
+			// pseudo code
+			var aquawomen = document.getElementById("img_Aqua");
+			var berrywomen = document.getElementById("img_Berry");
+			var choicecolor = ele.options[ele.selectedIndex].value;
+				
+				aquawomen.style.display = "none";
+				berrywomen.style.display = "inline-block";
+
+			if (choicecolor == "aqua") {
+				aquawomen.style.display = "inline-block";
+				berrywomen.style.display = "none";
+			} else if (choicecolor == "berry") {
+				aquawomen.style.display = "none";
+				berrywomen.style.display = "inline-block";
+			} else {
+
+			}
+		}
+
+	</script>
+
 	</head>
 	
 	<body class="productpage">
@@ -54,7 +78,8 @@
 					<div class="featuredProductImagesContainer">
 						
 						<figure class="featuredProductFigure">
-							<img src="./images/splashtop-aqua.png" alt="Women's Splash Top - Aqua" class="featuredProductImage">
+							<img src="./images/splashtop-aqua.png" alt="Women's Splash Top - Aqua" id="img_Aqua" class="featuredProductImage">
+							<img src="./images/splashtop-berry.png" alt="Women's Splash Top - Berry" id="img_Berry" class="featuredProductImage jsHide">
 						</figure>
 
 						<div class="suggestProductsContainer">
@@ -102,21 +127,21 @@
 								</section>
 
 								<section class="orderSelectionGroup orderGrid">
-									<select class="orderBox orderGrid">
-										<option>Select a Color</option>
-										<option>Aqua</option>
-										<option>Berry</option>
+									<select onchange="funcColorChange(this);" class="orderBox orderGrid">
+										<option value="">Select a Color</option>
+										<option value="aqua">Aqua</option>
+										<option value="berry">Berry</option>
 									</select>
 																	
 									<input type="text" class="orderBox orderGrid" placeholder="QTY" />
 									
 									<select class="orderBox orderGrid">
-										<option>Select a Size</option>
-										<option>X-Small</option>
-										<option>Small</option>
-										<option>Medium</option>
-										<option>Large</option>
-										<option>X-Large</option>
+										<option value="">Select a Size</option>
+										<option value="xsmall">X-Small</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+										<option value="xlarge">X-Large</option>
 									</select>
 								
 									<a href="#" class="footnoteLink orderGrid">*Sizing Chart</a>

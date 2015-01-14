@@ -87,6 +87,10 @@ button {}
 
 
 /**********/
+.jsHide {
+	display: none;
+}
+/**********/
 
 .productpage {
 	/*background: url(../images/bodybg.gif);*/
