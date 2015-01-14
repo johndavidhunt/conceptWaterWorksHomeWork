@@ -240,7 +240,7 @@ button,
 	vertical-align: top;
 }
 .featuredProductFigure {
-	text-align: center;
+	text-align: right;
 	background: url(../images/productbg.png) no-repeat 0 0;
 }
 .featuredProductImage {}
