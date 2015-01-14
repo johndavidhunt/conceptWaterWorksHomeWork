@@ -223,17 +223,29 @@ button,
 	letter-spacing: 1px;
 
 }
-.pageContent {}
+.pageContent {
+	padding-bottom: 64px;
+}
 
 
 .featuredProductImagesContainer {
+	padding-top: 45px;
 	display: inline-block;
 	vertical-align: top;
 }
-.featuredProductFigure {}
+.featuredProductFigure {
+	text-align: center;
+	background: url(../images/productbg.png) no-repeat 0 0;
+}
 .featuredProductImage {}
-.suggestProductsContainer {}
-.suggestedProductMini {}
+.suggestProductsContainer {
+	vertical-align: top;
+}
+.suggestedProductMini {
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8em;
+}
 .suggestedProductImage {}
 
 
@@ -278,7 +290,9 @@ button,
 	color: #999;
 	text-decoration: line-through;
 }
-.priceListingValue {}
+.priceListingValue {
+	margin-left: 0;
+}
 .priceListingValue.closeout {
 	color: #aa0505;
 }
