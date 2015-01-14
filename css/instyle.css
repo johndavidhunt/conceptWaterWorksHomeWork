@@ -14,9 +14,20 @@ body {
 	/*height: 1120px;*/	
 }
 .productPageInnards {
-
+	vertical-align: top;
 	border-left: 3px solid rgba(25, 200, 125, 0.1);
 	border-right: 3px solid rgba(25, 200, 125, 0.1);
+}
+
+.featuredProductImagesContainer {
+	/*display: none;*/
+}
+
+.featuredProductInformation {
+	/*display: inline-block;*/
+	max-width: 425px;
+	border: 3px solid rgba(255, 125, 25, 0.1);
+	border-width: 0px 2px;
 }
 
 /**********/
@@ -88,9 +99,37 @@ button {}
 .productPageInnards {
 	width: 975px;
 	margin: 0 auto;
-
+	vertical-align: top;
+}
+.flexer {
+	display: flex;
 }
 
+button,
+.button {
+	display: block;
+	box-sizing: border-box;
+
+	background-color: #121b6a;
+	color: #fff;
+	padding: .5em 0;
+	max-width: 100%;
+	margin: 12px 0;
+
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 
+				0px 0px 2px rgba(255,255,255, 0.4),
+				0px -1px 0px rgba(0,0,0, 0.5),
+				-1px -2px 1px rgba(0,0,0, 0.3);
+
+	border: 1px solid rgba(0,0,0, 0.25);
+	box-shadow: 
+				inset 0px 0px 2px 3px rgba(255,255,255, 0.1),
+					  1px 2px 6px -2px #333;
+	border-radius: 6px;
+}
 
 .pageHeader {
 	background: rgb(181,181,181); /* Old browsers */
@@ -138,6 +177,8 @@ button {}
 
 .navList {
 	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 .navList li {
 	display: inline-block;
@@ -186,7 +227,8 @@ button {}
 
 
 .featuredProductImagesContainer {
-	display: none;
+	display: inline-block;
+	vertical-align: top;
 }
 .featuredProductFigure {}
 .featuredProductImage {}
@@ -195,41 +237,194 @@ button {}
 .suggestedProductImage {}
 
 
-.featuredProductInformation {
 
+.featuredProductInformation {
+	display: inline-block;
 }
-.featuredProductOrderForm {}
-.featuredProductOrderInfo {}
+
+.featuredProductOrderInfo {
+}
+.orderGrid {
+	display: inline-block;
+	margin: 8px 12px 10px 0;
+}
 .featuredProductOrderInfo h1 {
 	font-size: 2em;
 }
-.featuredProductOrderPrice {}
-.featuredProductPriceList {}
-.priceListingPrice {}
+
+
+.featuredProductPriceInfo {
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 1.1em;
+	width: 25%;
+	margin-left: 0;
+	border-right: 1px solid #333;
+}
+.featuredProductPriceInfo>* {
+	margin-left: 0;
+	min-width: 90%;
+}
+.featuredProductPriceList {
+	font-weight: bold;
+}
+.featuredProductPriceList dd {
+	margin-left: 0;
+}
+.priceListingCurrency {
+	font-weight: bold;
+}
+.pricecut {
+	color: #999;
+	text-decoration: line-through;
+}
 .priceListingValue {}
-.priceLisingValue {}
-.discountOfferNotice {}
-.shareThis {}
-.orderBox {}
-.actionButton {}
+.priceListingValue.closeout {
+	color: #aa0505;
+}
+.priceListingCurrency.closeout {
+	display: none;
+}
+.discountOfferNotice {
+	color: #555;
+	font-size: 0.75em;
+	padding: 1em 0;
+	text-align: center;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+
+}
+.shareThis,
+.shareThis {
+	font-size: 0.75em;
+}
+
+
+
+
+.orderSelectionGroup {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+	margin-right: 0;
+}
+.orderBox {
+	display: inline-block;
+}
+.footnoteLink {
+	color: #1270cc;
+	font-size: 0.75em;
+	text-decoration: none;
+}
+.actionButton {
+	background-color: ;
+	/*3a7ec6   rgb(56,125,196) */
+	/*2a70b7   rgb(42,112,183) */
+/******JdH******/
+
+	background: rgb(56,125,196); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(56,125,196,1) 0%, rgba(42,112,183,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,125,196,1)), color-stop(100%,rgba(42,112,183,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(42,112,183,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(42,112,183,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(42,112,183,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(56,125,196,1) 0%,rgba(42,112,183,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a7ec6', endColorstr='#2a70b7',GradientType=0 ); /* IE6-9 */
+
+/*1d4e99*/
+/*4483d1*/
+/*387dc4*/
+
+/*397ec5*/ 
+/*3076bd*/
+/*266cb3*/
+
+/*276db4*/
+/*3d7dc9*/
+/*164792*/
+
+
+	background: rgb(56,125,196); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(56,125,196,1) 0%, rgba(57,126,197,1) 47%, rgba(56,125,196,1) 48%, rgba(57,126,197,1) 48%, rgba(57,126,197,1) 49%, rgba(48,118,189,1) 50%, rgba(38,108,179,1) 51%, rgba(39,109,180,1) 53%, rgba(39,109,180,1) 53%, rgba(39,109,180,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,125,196,1)), color-stop(47%,rgba(57,126,197,1)), color-stop(48%,rgba(56,125,196,1)), color-stop(48%,rgba(57,126,197,1)), color-stop(49%,rgba(57,126,197,1)), color-stop(50%,rgba(48,118,189,1)), color-stop(51%,rgba(38,108,179,1)), color-stop(53%,rgba(39,109,180,1)), color-stop(53%,rgba(39,109,180,1)), color-stop(100%,rgba(39,109,180,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(57,126,197,1) 47%,rgba(56,125,196,1) 48%,rgba(57,126,197,1) 48%,rgba(57,126,197,1) 49%,rgba(48,118,189,1) 50%,rgba(38,108,179,1) 51%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(57,126,197,1) 47%,rgba(56,125,196,1) 48%,rgba(57,126,197,1) 48%,rgba(57,126,197,1) 49%,rgba(48,118,189,1) 50%,rgba(38,108,179,1) 51%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(56,125,196,1) 0%,rgba(57,126,197,1) 47%,rgba(56,125,196,1) 48%,rgba(57,126,197,1) 48%,rgba(57,126,197,1) 49%,rgba(48,118,189,1) 50%,rgba(38,108,179,1) 51%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(56,125,196,1) 0%,rgba(57,126,197,1) 47%,rgba(56,125,196,1) 48%,rgba(57,126,197,1) 48%,rgba(57,126,197,1) 49%,rgba(48,118,189,1) 50%,rgba(38,108,179,1) 51%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 53%,rgba(39,109,180,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#387dc4', endColorstr='#276db4',GradientType=0 ); /* IE6-9 */
+
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.75em;
+	width: 100%;
+	/*margin: 0;*/
+	
+
+}
 .featuredProductDetails {
 	font-size: 0.85em;
 }
 .featuredProductInlineName {
 	font-weight: bold;
 }
+.productOptionsList {
+	font-size: 0.85em;
+}
+.productOptionsList dt,
+.productOptionsList dd {
+	/*display: inline-block;*/
+	margin: 0;
+}
+.productOptionsList dt {
+	font-weight: bold;
+	float:left;
+	padding-right: 2px;
+}
+.productOptionsList dt:after {
+	content: ": ";
+	clear: both;
+}
+.productOptionsList dd {
+	display: inline;
+}
 
 
 .pageFooter {
+	padding-top: 24px;
 	background-color: #1e2039;
+	background-color: #22223d;
 	color: #EEE;
+	font-size: 0.8em;
 }
-.footerNav {}
-.footerLinkList {}
-.footerLinkList li {}
-.footerLinkList a {}
-.copyrightInfo {}
-.copyPart {}
+.footerNav {
+	padding-bottom: 72px;
+	background: url(../images/footerlogo.gif) no-repeat 0 0;
+	display: inline-block;
+	vertical-align: top;
+	flex: 2;
+}
+.footerLinkList {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 32px;
+}
+.footerLinkList li {
+	display: block;
+	padding: 0.5em 0;
+}
+.footerLinkList a,
+.footerLinkList a:visited {
+	color: #eee;
+}
+.copyrightInfo {
+	display: inline-block;
+	text-align: right;
+	flex: 1;
+}
+.copyPart {
+	display: block;
+}
 
 /**********/
 
