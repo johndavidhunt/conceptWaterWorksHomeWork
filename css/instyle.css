@@ -14,9 +14,9 @@ body {
 	/*height: 1120px;*/	
 }
 .productPageInnards {
-	vertical-align: top;
-	border-left: 3px solid rgba(25, 200, 125, 0.1);
-	border-right: 3px solid rgba(25, 200, 125, 0.1);
+	/*vertical-align: top;*/
+	/*border-left: 3px solid rgba(25, 200, 125, 0.1);*/
+	/*border-right: 3px solid rgba(25, 200, 125, 0.1);*/
 }
 
 .featuredProductImagesContainer {
@@ -25,9 +25,11 @@ body {
 
 .featuredProductInformation {
 	/*display: inline-block;*/
+	float: right;
+	width: 50%;
 	max-width: 425px;
-	border: 3px solid rgba(255, 125, 25, 0.1);
-	border-width: 0px 2px;
+	/*border: 3px solid rgba(255, 125, 25, 0.1);*/
+	/*border-width: 0px 2px;*/
 }
 
 /**********/
@@ -246,6 +248,7 @@ button,
 	vertical-align: top;
 }
 .suggestedProductMini {
+	vertical-align: top;
 	display: inline-block;
 	text-align: center;
 	font-size: 0.8em;
@@ -329,6 +332,26 @@ button,
 }
 .orderBox {
 	display: inline-block;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(236,236,236,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(236,236,236,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(236,236,236,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(236,236,236,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(236,236,236,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+	
+	margin-right: 0;
+	font-size: 0.8em;
+	height: 3em;
+	width: 30%;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	overflow: hidden;
+}
+select.orderBox {
+	width: 60%;
+	margin-right: 5%;
 }
 .footnoteLink {
 	color: #1270cc;
