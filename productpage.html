@@ -10,15 +10,12 @@
 	
 	<script type="text/javascript">
 		function funcColorChange(ele) {
-			// not working yet
-			// pseudo code
+			
 			var aquawomen = document.getElementById("img_Aqua");
 			var berrywomen = document.getElementById("img_Berry");
+			
 			var choicecolor = ele.options[ele.selectedIndex].value;
 				
-				aquawomen.style.display = "none";
-				berrywomen.style.display = "inline-block";
-
 			if (choicecolor == "aqua") {
 				aquawomen.style.display = "inline-block";
 				berrywomen.style.display = "none";

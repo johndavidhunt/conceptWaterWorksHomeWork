@@ -8,6 +8,8 @@
 	/*outline: 4px dashed tomato;*/
 }
 
+/*ef00a9 berry*/
+
 body {
 	/*background: url(../assets/design/productpage.jpg) no-repeat center top;*/
 	/*background-image:  linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url(../assets/design/productpage.jpg);*/
@@ -416,20 +418,23 @@ select.orderBox {
 }
 .productOptionsList dt,
 .productOptionsList dd {
-	/*display: inline-block;*/
+	display: inline;
 	margin: 0;
 }
 .productOptionsList dt {
 	font-weight: bold;
-	float:left;
+	/*float:left;*/
 	padding-right: 2px;
+}
+.productOptionsList dt:before {
+	content: "\A";
+    white-space: pre;
 }
 .productOptionsList dt:after {
 	content: ": ";
 	clear: both;
 }
 .productOptionsList dd {
-	display: inline;
 }
 
 
